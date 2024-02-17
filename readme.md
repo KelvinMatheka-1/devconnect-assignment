@@ -16,26 +16,28 @@ Flask
 Flask-SQLAlchemy
 Installation
 
-Clone this repository:
+1.Clone this repository:
 
 git clone <repository_url>
 
-Navigate into the project directory:
+2.Navigate into the project directory:
 
 cd <project_directory>
 
-Install the required Python dependencies:
+3.Install the required Python dependencies:
 
 pip install -r requirements.txt
-Set up the PostgreSQL database:
+
+4.Set up the PostgreSQL database:
 
 Create a new database named test_database.
 Update the database URI in config.py with your PostgreSQL username and password.
 
-Run the Flask application:
+5.Run the Flask application:
 
 python app.py
-Access the application in your web browser at http://localhost:5000.
+
+6.Access the application in your web browser at http://localhost:5000.
 
 Usage
 To add a new task, enter the task content in the input field and click "Add Task".
