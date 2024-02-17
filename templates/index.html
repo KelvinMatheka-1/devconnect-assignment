@@ -1,17 +1,14 @@
 {% extends 'base.html' %} {% block head %} {% endblock %} {% block body %}
 <div class="content">
-  <h1 style="text-align: center">Task Manager</h1>
-  {% if tasks|length < 1 %}
-  <h4 style="text-align: center">There are no tasks. Create one below</h4>
-  {% else %}
+  <h1>Todo List</h1>
+
   <table>
     <tr>
       <th>Task</th>
-      <th>Added</th>
+      <th>Date added</th>
       <th>Actions</th>
       <th>Status</th>
     </tr>
-<<<<<<< HEAD
     {% for task in tasks %}
         <tr>
           <td>{{ task.content}}</td>
@@ -29,25 +26,5 @@
     <input type="submit" value="Add Task" />
 </form>
 
-=======
-    {% for task in tasks%}
-
-    <tr>
-      <td>{{ task.content }}</td>
-      <td>{{ task.date_created.date() }}</td>
-      <td>
-        <a href="/delete/{{task.id}}">delete</a>
-        <br />
-        <a href="/update/{{task.id}}">Update</a>
-      </td>
-    </tr>
-    {% endfor %}
-  </table>
-  {% endif %}
-  <form action="/" method="POST">
-    <input type="text" name="content" id="content" />
-    <input type="submit" value="Add Task" />
-  </form>
->>>>>>> aa8f71a02046803c1e309c78d1c23509f6f681b0
 </div>
 {% endblock %}
