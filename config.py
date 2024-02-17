@@ -1,3 +1,3 @@
-DATABASE_USER = 'devconnect'
-DATABASE_PASSWORD = 'password'
+DATABASE_USER = 'kelvin'
+DATABASE_PASSWORD = 'Omarionconor2'
 DATABASE_NAME = 'todo_database'
